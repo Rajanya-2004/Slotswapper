@@ -1,0 +1,84 @@
+/* SwapRequests.css */
+
+.swap-container {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.swap-container h1 {
+  text-align: center;
+  color: #4a90e2;
+}
+
+.message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #333;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+}
+
+.swap-list {
+  list-style: none;
+  padding: 0;
+}
+
+.swap-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.swap-card.outgoing {
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.swap-card strong {
+  color: #4a90e2;
+}
+
+.swap-card button {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.swap-card .accept-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.swap-card .reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.swap-card .status {
+  font-weight: bold;
+}
+
+.status-ACCEPTED {
+  color: #28a745;
+}
+
+.status-REJECTED {
+  color: #dc3545;
+}
+
+.status-SWAP_PENDING {
+  color: #ffc107;
+}

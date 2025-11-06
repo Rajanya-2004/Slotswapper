@@ -1,0 +1,131 @@
+/* Body for dashboard */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Center dashboard horizontally, allow vertical scroll */
+.dashboard {
+  width: 100%;
+  max-width: 800px; /* reasonable max width */
+  margin: 0 auto; /* center horizontally */
+  background: white;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* Heading */
+.dashboard h2 {
+  text-align: center;
+  color: #023e8a;
+  margin-bottom: 25px;
+}
+
+/* Form inputs */
+/* Dashboard Form */
+.dashboard form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* spacing between fields */
+  margin-bottom: 30px;
+}
+
+.dashboard input,
+.dashboard button {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.dashboard input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 5px rgba(0, 180, 216, 0.3);
+}
+
+.dashboard button {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.dashboard button:hover {
+  background: linear-gradient(135deg, #0077b6, #0096c7);
+  transform: scale(1.02);
+}
+
+/* Optional: make datetime inputs smaller */
+.dashboard input[type="datetime-local"] {
+  font-size: 13px;
+}
+
+
+/* My Events Section */
+.events {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.events li {
+  background: #f1f9ff;
+  border-left: 6px solid #0077b6;
+  padding: 15px 20px;
+  border-radius: 12px;
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* stack info nicely */
+  gap: 6px;
+}
+
+.events li .event-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.events li .event-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #023e8a;
+}
+
+.events li .event-time {
+  font-size: 14px;
+  color: #555;
+}
+
+.events li .event-status {
+  font-weight: 500;
+  color: #0077b6;
+}
+
+.events li button {
+  align-self: flex-start; /* button below text */
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.events li button:hover {
+  background: linear-gradient(135deg, #0077b6, #0096c7);
+  transform: scale(1.05);
+}
+
