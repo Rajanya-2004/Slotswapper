@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = process.env.REACT_APP_API_URL;
 
 //  Register User
 export async function registerUser(userData) {
@@ -175,3 +175,4 @@ export async function respondSwapRequest(swapId, accept, token) {
     return { error: "Server error" };
   }
 }
+
