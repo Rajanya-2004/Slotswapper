@@ -26,29 +26,29 @@ Styling: Custom CSS to provide a clean, modern, and professional interface.
 
 Separation of Concerns: Frontend and backend are done in two different folders to simplify maintenance and deployment.
 
-slotswapper/
+    slotswapper/
 
-backend/
+       backend/
 
- models/          # MongoDB schemas (User, Event, SwapRequest)
+            models/          # MongoDB schemas (User, Event, SwapRequest)
  
- routes/          # Express routes for auth, events, swaps
+             routes/          # Express routes for auth, events, swaps
  
- middleware/      # Authentication middleware
+             middleware/      # Authentication middleware
  
- server.js        # Entry point for backend server
+     server.js        # Entry point for backend server
  
-frontend/
+    frontend/
 
- src/
+     src/
      components/  # React components (Dashboard, Marketplace, Notifications, Register, Login)
          api.js       # API helper functions
          
-        index.js     # React entry point
+         index.js     # React entry point
         
-        *.css        # Styling for pages and components
+          *.css        # Styling for pages and components
         
-    App.js       # Main frontend routing
+           App.js       # Main frontend routing
 
 README.md
 
